@@ -1,8 +1,8 @@
-package lab2;
+package lab2.helloworld;
 
 import javax.jws.WebService;
 
-@WebService(endpointInterface = "lab2.HelloWorld")
+@WebService(endpointInterface = "lab2.helloworld.HelloWorld")
 public class HelloWorldImpl implements HelloWorld {
 
     @Override

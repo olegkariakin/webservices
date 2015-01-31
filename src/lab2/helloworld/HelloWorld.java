@@ -1,4 +1,4 @@
-package lab2;
+package lab2.helloworld;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

@@ -1,4 +1,4 @@
-package lab2;
+package lab2.helloworld;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
@@ -11,7 +11,7 @@ public class HelloWorldClient {
 
         //1-st argument - service URI, refer to WSDL document above
         //2-st argument - service name, refer to WSDL document above
-        QName qName = new QName("http://lab2/", "HelloWorldImplService");
+        QName qName = new QName("http://helloworld.lab2/", "HelloWorldImplService");
 
         Service service = Service.create(url, qName);
 
