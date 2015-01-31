@@ -1,5 +1,7 @@
 package lab2.helloworld;
 
+import lab2.person.PersonWebService;
+
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import java.net.URL;
@@ -15,9 +17,9 @@ public class HelloWorldClient {
 
         Service service = Service.create(url, qName);
 
-        HelloWorld hello = service.getPort(HelloWorld.class);
+        PersonWebService hello = service.getPort(PersonWebService.class);
 
-        System.out.println(hello.getHelloWorldAsString("test"));
+        //System.out.println(hello.getHelloWorldAsString("test"));
     }
 
 }
