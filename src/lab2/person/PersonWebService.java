@@ -9,10 +9,10 @@ import javax.jws.soap.SOAPBinding;
 public interface PersonWebService {
 
     @WebMethod
-    Person getPersonByAge (int age);
+    Person getPersonById(long id);
 
     @WebMethod
-    boolean removePersonByAge(int age);
+    boolean removePersonById(long id);
 
     @WebMethod
     boolean updatePerson(Person person);
